@@ -1,0 +1,9 @@
+{
+    "name": "rhash_md5",
+    "version": "0.0.1",
+    "repo": "pepaslabs/rhash_md5.c",
+    "description": "Aleksey Kravchenko's MD5 implementation (extracted from RHash)",
+    "keywords": ["md5"],
+    "license": "MIT",
+    "src": ["md5.h", "md5.c", "byte_order.h", "byte_order.c", "ustd.h"]
+}

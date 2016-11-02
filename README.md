@@ -33,15 +33,15 @@ cat > main.c << 'EOF'
 
 int main(int argc, char **argv) {
 
-        // compute the MD5 sum of the string "Hello, World!"
-        md5_ctx ctx;
-        unsigned char hash[16];
-        rhash_md5_init(&ctx);
-        rhash_md5_update(&ctx, (const unsigned char *)"Hello, World!", 13);
-        rhash_md5_final(&ctx, hash);
+    // compute the MD5 sum of the string "Hello, World!"
+    md5_ctx ctx;
+    unsigned char hash[16];
+    rhash_md5_init(&ctx);
+    rhash_md5_update(&ctx, (const unsigned char *)"Hello, World!", 13);
+    rhash_md5_final(&ctx, hash);
 
-        // print the (binary) MD5 sum to stdout
-        write(fileno(stdout), hash, 16);
+    // print the (binary) MD5 sum to stdout
+    write(fileno(stdout), hash, 16);
 
     return EXIT_SUCCESS;
 }

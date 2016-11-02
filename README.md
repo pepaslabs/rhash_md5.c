@@ -28,10 +28,10 @@ cat > main.c << 'EOF'
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+
 #include "rhash_md5/md5.h"
 
 int main(int argc, char **argv) {
-
     // compute the MD5 sum of the string "Hello, World!"
     md5_ctx ctx;
     unsigned char hash[16];

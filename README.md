@@ -12,7 +12,7 @@ $ clib install pepaslabs/rhash_md5.c
 
 ## API
 
-```
+```c
 void rhash_md5_init(md5_ctx *ctx);
 void rhash_md5_update(md5_ctx *ctx, const unsigned char* msg, size_t size);
 void rhash_md5_final(md5_ctx *ctx, unsigned char result[16]);

@@ -28,8 +28,7 @@ cat > main.c << 'EOF'
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-
-#include "md5.h"
+#include "rhash_md5/md5.h"
 
 int main(int argc, char **argv) {
 
@@ -47,8 +46,8 @@ int main(int argc, char **argv) {
 }
 EOF
 clib install pepaslabs/rhash_md5.c
-gcc -c deps/rhash_md5/*.c
-gcc -Ideps/rhash_md5 *.o main.c
+gcc -Wall -Werror -c deps/rhash_md5/*.c
+gcc -Wall -Werror -Ideps *.o main.c
 ```
 
 Try it out!
